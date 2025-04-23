@@ -14,7 +14,7 @@ header{
     position: fixed;
     width: 100%;
     top: 0;
-    left: 0; 
+    left: 0;
 
 }
 
@@ -49,19 +49,44 @@ body{
 
 .sobre{
     display: flex;
-    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
     font-size: 20px;
+    align-items: center;
 }
 
-.xp img {
-    max-width: 150px;
-    border-radius: 50%;
-    height: auto;
+.sobre p{
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid #7C4585;
+    padding-bottom: 5px;
+    width: fit-content;
 }
 
-.ctt img {
-    max-width: 150px;
-    border-radius: 50%;
-    height: auto;
+.sobre img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    object-fit: cover;
+    margin: 0;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    box-shadow: 0 4px 8px #4d4b5e;
 }
 
+@media (max-width: 600px) {
+    .sobre {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre img {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .sobre p {
+        font-size: 1.5rem;
+    }
+}
